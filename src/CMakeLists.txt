@@ -1,8 +1,15 @@
 ﻿
 
-set (SOURSES "game.h" "game.cpp" "main.cpp")
+set (SOURSES 
+"main.cpp" 
+"game.h" 
+"game.cpp" 
+"game_exception.h" 
+"position.h" 
+"position.cpp"
+)
 
-add_executable (chess ${SOURSES} "misc.h")
+add_executable (chess ${SOURSES})
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET chess PROPERTY CXX_STANDARD 20)

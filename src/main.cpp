@@ -1,9 +1,12 @@
 ﻿#include "game.h"
-#include "misc.h"
+#include "position.h"
 #include <iostream>
+#include "game_exception.h"
+
+
 
 int main()
 {
-	std::cout << "123";
+	std::cout << 123;
 	return 0;
 } 
