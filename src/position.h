@@ -8,7 +8,6 @@ enum Color : unsigned char
 	WHITE = 1,						
 	BLACK = 0,
 };
-
 Color operator ! (Color color);
 
 enum Piece_type : unsigned char
@@ -46,14 +45,15 @@ struct Point
 
 		bool operator == (Point other) const;
 		Point operator + (Point other) const;
-		Point operator * (signed char scalar) const;
 
 		signed char get_x() const;
 		signed char get_y() const;
 
 
-		bool is_valid();
+		bool is_valid() const;
 };
+Point operator * (Point point, signed char scalar);
+
 
 struct Move
 {
@@ -65,10 +65,10 @@ struct Move
 	Move& operator = (const Move& other) = default;
 	bool operator == (const Move& other) const;
 
-	private:
-		Move() : from(Point(0,0)), to(Point(0, 0)) {}
-	public:
-		static const Move INVALID_MOVE;
+	//private:
+	//	Move() : from(Point(0,0)), to(Point(0, 0)) {}
+	//public:
+	//	static const Move INVALID_MOVE;
 };
 
 struct Board
@@ -92,31 +92,39 @@ struct Board
 };
 
 
-struct Game;
 
 class Position
 {
-	friend struct Game;
-
-
 	Board board;
 
-	bool IS_WHITE_CASTLE_POSSIBLE;
-	bool IS_WHITE_LONG_CASTLE_POSSIBLE;
-	bool IS_BLACK_CASTLE_POSSIBLE;
-	bool IS_BLACK_LONG_CASTLE_POSSIBLE;
+	bool is_white_castle_possible;
+	bool is_white_long_castle_possible;
+	bool is_black_castle_possible;
+	bool is_black_long_castle_possible;
 
-	bool IS_GAME_OVER = false;
-	bool IS_PROMOTION_POSSIBLE = false;
+	bool is_game_over = false;
+	bool is_promotion_possible = false;
 
 	unsigned short move_counter = 1;
 
-	Color WHOOSE_MOVE = Color::WHITE;
+	Color whoose_move = Color::WHITE;
 
 	Point white_king {4,0};
 	Point black_king {4,7};
 	Point promotion_square;
 	Move  last_move = Move(Point(0,0), Point(7,7));
+
+	static const Move WHITE_CASTLE;
+	static const Move WHITE_LONG_CASTLE;
+	static const Move BLACK_CASTLE;
+	static const Move BLACK_LONG_CASTLE;
+
+	static const std::vector<Point> knight_moves;
+	static const std::vector<Point> bishop_moves;
+	static const std::vector<Point> rook_moves;
+	static const std::vector<Point> king_moves;
+	static const std::vector<Point> black_pawn_eat_moves;
+	static const std::vector<Point> white_pawn_eat_moves;
 
 
 	static bool is_beaten_by(Color color, Point point, const Position&);
@@ -125,6 +133,12 @@ class Position
 	static bool is_castle_possible(Color color, const Position&);
 	static bool is_long_castle_possible(Color color, const Position&);
 
-	std::vector<Move> get_possible_moves(Color color) const;
 
+	static std::vector<Move> get_possible_pawn_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_knight_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_rook_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_bishop_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_king_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_queen_moves(Color color, Point from, const Position& position);
+	static std::vector<Move> get_possible_moves(Color color, const Position& position);
 };
