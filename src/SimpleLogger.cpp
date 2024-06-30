@@ -9,7 +9,6 @@ struct SimpleLogger final : public Logger {
         SimpleLogger() = default;
         virtual ~SimpleLogger() = default;
 
-    private:
         static std::shared_ptr<Logger> singleton;
 
     friend std::shared_ptr<Logger> Logger::getInstance();

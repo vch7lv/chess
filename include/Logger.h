@@ -1,4 +1,4 @@
-#include <iostream>
+#pragma once
 #include <string>
 #include <memory>
 
@@ -18,3 +18,17 @@ class Logger
 
     friend std::default_delete<Logger>;
 };
+
+template<typename T>
+struct LoggingDeletor
+{
+    void operator () (T* ptr) const {
+        auto logger = Logger::getInstance();
+        std::string TypeName = typeid(T).name();
+        logger->log(TypeName + " object is deleted");
+        delete ptr;
+    }
+};
+
+
+
