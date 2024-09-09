@@ -15,8 +15,7 @@ class Logger
         Logger& operator = (const Logger&) = delete;
 
         static std::shared_ptr<Logger> getInstance();
-
-    friend std::default_delete<Logger>;
+        virtual void destroy() = 0;
 };
 
 template<typename T>

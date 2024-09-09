@@ -2,10 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-#ifdef LOG
-#include "Logger.h"
-#endif
-
 struct Widget : sf::Drawable
 {
     protected:
@@ -21,15 +17,10 @@ struct Widget : sf::Drawable
         Widget(const Widget&) = delete;
         Widget& operator = (const Widget&) = delete;
 
-        static std::shared_ptr<Widget> createButton();
+        template <typename ... Args>
+        static std::shared_ptr<Widget> createButton(Args&& ... args);
 
     protected:
         sf::Vector2f position;
         sf::Vector2f size;
-
-    #ifdef LOG
-        friend LoggingDeletor<Widget>;
-    #else
-        friend void std::_Destroy<Widget>(Widget*);
-    #endif
 };

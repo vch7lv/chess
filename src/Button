@@ -1,6 +1,0 @@
-#include "Widget.h"
-
-struct Button final : Widget
-{
-    
-};

@@ -10,7 +10,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(
     SOURCES
     src/main.cpp
-    src/SimpleLogger.cpp
+    src/ConsoleLogger.cpp
+    src/Button.cpp
 )
 
 add_executable(
