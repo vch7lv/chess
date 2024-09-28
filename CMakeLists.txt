@@ -16,4 +16,4 @@ add_executable(
 
 target_include_directories(chess PUBLIC include)
 
-target_link_libraries(chess sfml-system sfml-window sfml-graphics)
+#target_link_libraries(chess sfml-system sfml-window sfml-graphics)

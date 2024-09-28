@@ -1,0 +1,3 @@
+/home/vch7lv/projects/chess/out/CMakeFiles/chess.dir
+/home/vch7lv/projects/chess/out/CMakeFiles/edit_cache.dir
+/home/vch7lv/projects/chess/out/CMakeFiles/rebuild_cache.dir
