@@ -1,5 +1,6 @@
-CMakeFiles/chess.dir/src/main.cpp.o: \
- /home/vch7lv/projects/chess/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/chess.dir/src/Chesstypes.cpp.o: \
+ /home/vch7lv/projects/chess/src/Chesstypes.cpp \
+ /usr/include/stdc-predef.h \
  /home/vch7lv/projects/chess/include/Chesstypes.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

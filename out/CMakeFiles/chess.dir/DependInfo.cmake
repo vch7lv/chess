@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/vch7lv/projects/chess/src/Chesstypes.cpp" "CMakeFiles/chess.dir/src/Chesstypes.cpp.o" "gcc" "CMakeFiles/chess.dir/src/Chesstypes.cpp.o.d"
   "/home/vch7lv/projects/chess/src/main.cpp" "CMakeFiles/chess.dir/src/main.cpp.o" "gcc" "CMakeFiles/chess.dir/src/main.cpp.o.d"
   )
 

@@ -129,6 +129,30 @@ chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/build
 .PHONY : chess/fast
 
+src/Chesstypes.o: src/Chesstypes.cpp.o
+.PHONY : src/Chesstypes.o
+
+# target to build an object file
+src/Chesstypes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/Chesstypes.cpp.o
+.PHONY : src/Chesstypes.cpp.o
+
+src/Chesstypes.i: src/Chesstypes.cpp.i
+.PHONY : src/Chesstypes.i
+
+# target to preprocess a source file
+src/Chesstypes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/Chesstypes.cpp.i
+.PHONY : src/Chesstypes.cpp.i
+
+src/Chesstypes.s: src/Chesstypes.cpp.s
+.PHONY : src/Chesstypes.s
+
+# target to generate assembly for a file
+src/Chesstypes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chess.dir/build.make CMakeFiles/chess.dir/src/Chesstypes.cpp.s
+.PHONY : src/Chesstypes.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... chess"
+	@echo "... src/Chesstypes.o"
+	@echo "... src/Chesstypes.i"
+	@echo "... src/Chesstypes.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
