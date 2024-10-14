@@ -1,6 +1,6 @@
 CMakeFiles/chess.dir/src/main.cpp.o: \
  /home/vch7lv/projects/chess/src/main.cpp /usr/include/stdc-predef.h \
- /home/vch7lv/projects/chess/include/Chesstypes.h \
+ /home/vch7lv/projects/chess/include/ChessTypes.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -163,4 +163,145 @@ CMakeFiles/chess.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/vch7lv/projects/chess/widgets/include/Gui.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Config.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Clock.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Export.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Time.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Err.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/InputStream.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Lock.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Mutex.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Sleep.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/String.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Utf.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/String.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Thread.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Thread.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Vector3.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/System/Vector3.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Clipboard.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Context.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Event.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Touch.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/Window.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+ /home/vch7lv/projects/chess/widgets/include/Widget.h \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Shape.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Transform.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/ConvexShape.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Font.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/View.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/RenderTexture.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/RenderWindow.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Shader.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Glsl.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Glsl.inl \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
+ /home/vch7lv/projects/chess/out/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/bits/atomic_wait.h /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/bits/ranges_uninitialized.h \
+ /usr/include/c++/11/bits/uses_allocator_args.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h

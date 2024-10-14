@@ -1,4 +1,4 @@
-#include "Chesstypes.h"
+#include "ChessTypes.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -105,6 +105,13 @@ bool Point::operator == (const Point& rhs) const {
     return x == rhs.x && y == rhs.y;
 }
 
+Piece Board::get_piece(Point square) const {
+    return buf[square.x][square.y];
+}
+void Board::set_piece(Point square, Piece piece) {
+    buf[square.x][square.y] = piece;
+}
+
 bool Move::is_on_board() const {
     if (!from.is_on_board() || !to.is_on_board()) {
         return false;
@@ -126,6 +133,8 @@ Move get_castle_move(PieceColor playerColor) {
 Move get_long_castle_move(PieceColor playerColor) {
     return (playerColor == PieceColor::WHITE ? white_long_castle : black_long_castle);
 }
+
+
 
 
 bool ChessPosition::make_move(PieceColor playerColor, Move move) {
@@ -726,14 +735,11 @@ bool ChessPosition::is_beaten_by_knight(Point square, PieceColor attackerColor) 
 }
 
 
-Piece& ChessPosition::get_piece(Point square) {
-    return board[square.x][square.y];
-}
 Piece ChessPosition::get_piece(Point square) const {
-    return board[square.x][square.y];
+    return board.get_piece(square);
 }
-void ChessPosition::set_piece(Point square, Piece new_piece) {
-    board[square.x][square.y] = new_piece;
+void ChessPosition::set_piece(Point square, Piece piece) {
+    board.set_piece(square, piece);
 }
 
 
@@ -742,7 +748,7 @@ void print_chessposition(const ChessPosition& pos, bool verbose) {
     {
         for (int y = 0; y < 8; ++y)
         {
-            auto piece = pos.board[y][x];
+            auto piece = pos.board.get_piece({y,x});
             std::string str;
 
             if (piece.is_white()) str += "W";
@@ -763,6 +769,7 @@ void print_chessposition(const ChessPosition& pos, bool verbose) {
         std::cout << '\n';
     }
 
+    /*
     if (verbose) {
         std::cout << '\n';
 
@@ -793,6 +800,6 @@ void print_chessposition(const ChessPosition& pos, bool verbose) {
         std::cout << "need promotion : " << (pos.NEED_PROMOTION ? "true" : "false") << "\n";
         std::cout << "promotion square: {" << pos.promotion_square.x << "," << pos.promotion_square.y << "}\n";
 
-    }
+    }*/
 
 }

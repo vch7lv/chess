@@ -72,25 +72,9 @@ struct Point
 Point operator + (Point lhs, Point rhs);
 Point operator * (Point lhs, int num);
 
-
-struct Move
+class Board
 {
-    Point from;
-    Point to;
-
-    bool is_on_board() const;
-    bool operator == (const Move& rhs) const;
-};
-
-Move get_castle_move(PieceColor playerColor);
-Move get_long_castle_move(PieceColor playerColor);
-Point get_pawn_move(PieceColor playerColor);
-std::vector<Point> get_attack_pawn_moves(PieceColor playerColor);
-
-
-struct ChessPosition
-{
-    Piece board[8][8] = 
+    Piece buf[8][8]
     {
         {WR(),WP(),E(),E(),E(),E(),BP(),BR()},
         {WKN(),WP(),E(),E(),E(),E(),BP(),BKN()},
@@ -101,6 +85,33 @@ struct ChessPosition
         {WKN(),WP(),E(),E(),E(),E(),BP(),BKN()},
         {WR(),WP(),E(),E(),E(),E(),BP(),BR()}
     };
+
+    public:
+        Piece get_piece(Point square) const;
+        void set_piece(Point square, Piece piece);
+};
+
+
+struct Move
+{
+    Point from;
+    Point to;
+
+    bool is_on_board() const;
+    bool operator == (const Move& rhs) const;
+};
+
+
+Move get_castle_move(PieceColor playerColor);
+Move get_long_castle_move(PieceColor playerColor);
+Point get_pawn_move(PieceColor playerColor);
+std::vector<Point> get_attack_pawn_moves(PieceColor playerColor);
+
+
+
+struct ChessPosition
+{
+    Board board;
 
     PieceColor turn = PieceColor::WHITE;
 
@@ -119,16 +130,17 @@ struct ChessPosition
     bool NEED_PROMOTION = false;
     Point promotion_square;
 
-    public:
 
         bool make_move(PieceColor playerColor, Move move);
         bool make_promotion(PieceColor playerColor, PieceType newPiece);
+        
+    private:
+        Piece get_piece(Point square) const;
 
         bool is_checked(PieceColor playerColor);
         bool is_checkmated(PieceColor playerColor);
 
 
-    private:
         std::vector<Move> get_valid_pawn_moves(Point from, PieceColor player);
         std::vector<Move> get_valid_rook_moves(Point from, PieceColor player);
         std::vector<Move> get_valid_knight_moves(Point from, PieceColor player);
@@ -152,8 +164,6 @@ struct ChessPosition
         bool is_beaten_by_pawn(Point square, PieceColor attackerColor);
         bool is_beaten_by_knight(Point square, PieceColor attackerColor);
 
-        Piece& get_piece(Point square);
-        Piece get_piece(Point square) const;
         void set_piece(Point square, Piece);
 };
 

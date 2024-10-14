@@ -97,19 +97,72 @@ CMakeFiles/chess.dir/src/Chesstypes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/Chesstypes.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vch7lv/projects/chess/src/Chesstypes.cpp -o CMakeFiles/chess.dir/src/Chesstypes.cpp.s
 
+CMakeFiles/chess.dir/src/LocalGame.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/src/LocalGame.cpp.o: ../src/LocalGame.cpp
+CMakeFiles/chess.dir/src/LocalGame.cpp.o: CMakeFiles/chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vch7lv/projects/chess/out/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chess.dir/src/LocalGame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chess.dir/src/LocalGame.cpp.o -MF CMakeFiles/chess.dir/src/LocalGame.cpp.o.d -o CMakeFiles/chess.dir/src/LocalGame.cpp.o -c /home/vch7lv/projects/chess/src/LocalGame.cpp
+
+CMakeFiles/chess.dir/src/LocalGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/LocalGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vch7lv/projects/chess/src/LocalGame.cpp > CMakeFiles/chess.dir/src/LocalGame.cpp.i
+
+CMakeFiles/chess.dir/src/LocalGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/LocalGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vch7lv/projects/chess/src/LocalGame.cpp -o CMakeFiles/chess.dir/src/LocalGame.cpp.s
+
+CMakeFiles/chess.dir/src/Player.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/src/Player.cpp.o: ../src/Player.cpp
+CMakeFiles/chess.dir/src/Player.cpp.o: CMakeFiles/chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vch7lv/projects/chess/out/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chess.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chess.dir/src/Player.cpp.o -MF CMakeFiles/chess.dir/src/Player.cpp.o.d -o CMakeFiles/chess.dir/src/Player.cpp.o -c /home/vch7lv/projects/chess/src/Player.cpp
+
+CMakeFiles/chess.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vch7lv/projects/chess/src/Player.cpp > CMakeFiles/chess.dir/src/Player.cpp.i
+
+CMakeFiles/chess.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vch7lv/projects/chess/src/Player.cpp -o CMakeFiles/chess.dir/src/Player.cpp.s
+
+CMakeFiles/chess.dir/src/GameException.cpp.o: CMakeFiles/chess.dir/flags.make
+CMakeFiles/chess.dir/src/GameException.cpp.o: ../src/GameException.cpp
+CMakeFiles/chess.dir/src/GameException.cpp.o: CMakeFiles/chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vch7lv/projects/chess/out/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/chess.dir/src/GameException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chess.dir/src/GameException.cpp.o -MF CMakeFiles/chess.dir/src/GameException.cpp.o.d -o CMakeFiles/chess.dir/src/GameException.cpp.o -c /home/vch7lv/projects/chess/src/GameException.cpp
+
+CMakeFiles/chess.dir/src/GameException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/GameException.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vch7lv/projects/chess/src/GameException.cpp > CMakeFiles/chess.dir/src/GameException.cpp.i
+
+CMakeFiles/chess.dir/src/GameException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/GameException.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vch7lv/projects/chess/src/GameException.cpp -o CMakeFiles/chess.dir/src/GameException.cpp.s
+
 # Object files for target chess
 chess_OBJECTS = \
 "CMakeFiles/chess.dir/src/main.cpp.o" \
-"CMakeFiles/chess.dir/src/Chesstypes.cpp.o"
+"CMakeFiles/chess.dir/src/Chesstypes.cpp.o" \
+"CMakeFiles/chess.dir/src/LocalGame.cpp.o" \
+"CMakeFiles/chess.dir/src/Player.cpp.o" \
+"CMakeFiles/chess.dir/src/GameException.cpp.o"
 
 # External object files for target chess
 chess_EXTERNAL_OBJECTS =
 
 chess: CMakeFiles/chess.dir/src/main.cpp.o
 chess: CMakeFiles/chess.dir/src/Chesstypes.cpp.o
+chess: CMakeFiles/chess.dir/src/LocalGame.cpp.o
+chess: CMakeFiles/chess.dir/src/Player.cpp.o
+chess: CMakeFiles/chess.dir/src/GameException.cpp.o
 chess: CMakeFiles/chess.dir/build.make
+chess: widgets/libwidgets.so
+chess: _deps/sfml-build/lib/libsfml-graphics-d.so.2.5.1
+chess: _deps/sfml-build/lib/libsfml-window-d.so.2.5.1
+chess: _deps/sfml-build/lib/libsfml-audio-d.so.2.5.1
+chess: _deps/sfml-build/lib/libsfml-system-d.so.2.5.1
 chess: CMakeFiles/chess.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vch7lv/projects/chess/out/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable chess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vch7lv/projects/chess/out/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable chess"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chess.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

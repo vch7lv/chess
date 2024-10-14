@@ -1,24 +1,10 @@
-#include "Chesstypes.h"
+#include "ChessTypes.h"
+#include "Gui.hpp"
 
 int main()
 {
-    ChessPosition pos;
-    auto col = PieceColor::WHITE;
+    sf::RenderWindow window{ {900, 800}, "MY GUI" };
+    Gui gui(window);
 
-    print_chessposition(pos);
-
-    while (true) {
-        int b,d;
-        char a,c;
-        std::cin >> a >> b >> c >> d;
-
-
-        if (pos.make_move(col, {{a-'a',b-1},{c-'a',d-1}})) {
-            print_chessposition(pos);
-            std::cout << std::endl;
-            col = getOppositeColor(col);
-        } else {
-            std::cout << "bad move" << std::endl;
-        }
-    }
+    gui.mainloop();
 }

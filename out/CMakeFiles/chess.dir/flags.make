@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vch7lv/projects/chess/include
+CXX_INCLUDES = -I/home/vch7lv/projects/chess/include -I/home/vch7lv/projects/chess/widgets/include -I/home/vch7lv/projects/chess/out/_deps/sfml-src/include
 
 CXX_FLAGS = -g -std=gnu++20
 
